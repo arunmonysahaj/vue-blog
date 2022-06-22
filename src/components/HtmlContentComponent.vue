@@ -14,10 +14,10 @@
         };
       },
       mounted() {
-          this.setupRedocScript()
+          this.setupRedoc()
       },
       methods: {
-          async setupRedocScript() {
+          async setupRedoc() {
             let redocScript = document.createElement('script')
             redocScript.setAttribute('src', 'https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js')
             document.head.appendChild(redocScript)
