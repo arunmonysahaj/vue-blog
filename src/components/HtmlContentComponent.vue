@@ -21,7 +21,7 @@
             let redocScript = document.createElement('script')
             redocScript.setAttribute('src', 'https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js')
             document.head.appendChild(redocScript)
-            const res = apis.getSpecFileURL();
+            const res = await apis.getSpecFileURL();
             this.preSignedSpecUrl =  res.url;
           }
       }
